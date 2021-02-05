@@ -1,1 +1,1 @@
-# Brest Java Course 2021 (winter)
+# Brest Java Course 2021 (My project)
