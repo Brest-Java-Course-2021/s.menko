@@ -1,1 +1,1 @@
-Rest-Service Online-Store. Rest-Client will be added soon: in the process of writing tests.
+Rest-Service Online-Store. Rest-Client in the process of writing tests.
