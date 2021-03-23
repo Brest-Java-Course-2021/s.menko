@@ -1,1 +1,1 @@
-Rest-Service
+Rest-Service Online-Store
