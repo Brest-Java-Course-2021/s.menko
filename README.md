@@ -1,1 +1,1 @@
-Rest-Service Online-Store. Rest-Client in the process of writing tests.
+Rest service and Rest client are written. It remains to write tests for Rest client.
