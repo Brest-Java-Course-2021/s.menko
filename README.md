@@ -32,7 +32,7 @@ Run the following commands to start Web app:
     2) cd web-app/target;  
     3) java -jar web-app-1.0-SNAPSHOT.war  
 
-#####Now Web app is available at the address: [http://localhost:8088](http://localhost:8088).
+##### Now Web app is available at the address: [http://localhost:8088](http://localhost:8088).
 
 ## Documentation
 
