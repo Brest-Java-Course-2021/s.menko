@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.epam.brest.service.impl.CategoryServiceImplIT
--------------------------------------------------------------------------------
-Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.53 s - in com.epam.brest.service.impl.CategoryServiceImplIT
