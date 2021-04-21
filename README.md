@@ -40,5 +40,5 @@ Run the following commands to start Web app:
 ---
 ## ENDPOINTS FROM REST APP
 
-##### You can download [this](documentation/Postman%20collection/Online store.postman_collection.json) json file and import it into Postman app 
+##### You can download [this](documentation/Postman%20collection/Online%20store.postman_collection.json) json file and import it into Postman app 
 
