@@ -22,7 +22,7 @@ Run the following commands to start Rest app:
     2) cd rest-app/target;  
     3) java -jar rest-app-1.0-SNAPSHOT.jar;  
 
-#####Now Rest app is available at the address: [http://localhost:8080](http://localhost:8080).
+##### Now Rest app is available at the address: [http://localhost:8080](http://localhost:8080).
 ---
 ## Web app
 
