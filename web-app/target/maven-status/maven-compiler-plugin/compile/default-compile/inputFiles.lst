@@ -1,0 +1,14 @@
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/Application.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/SiteController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/AdminCategoryController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/AdminController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/AdminOrderController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/CatalogController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/UserController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/CabinetController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/ProductController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/AdminBase.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/config/ApplicationConfig.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/CartController.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/config/TestConfig.java
+/home/stas/sMenko/web-app/src/main/java/com/epam/brest/service/web_app/AdminProductController.java

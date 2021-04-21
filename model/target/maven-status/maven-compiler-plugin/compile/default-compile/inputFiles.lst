@@ -1,0 +1,16 @@
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/User.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/Order.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/DataOrderInterval.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/Product.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/SerializerAndDesirializer/ConverterFromStringToDate.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/SerializerAndDesirializer/ConverterFromDateToString.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/service/validation/CheckPhone.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/CheckUserData.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/SerializerAndDesirializer/LocalDateTimeDeserializer.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/SerializerAndDesirializer/LocalDateTimeSerializer.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/Category.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/OrderDetail.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/Pagination.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/model/UserEdit.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/SerializerAndDesirializer/ConverterFromMultipartToString.java
+/home/stas/sMenko/model/src/main/java/com/epam/brest/service/validation/PhoneConstraintValidator.java

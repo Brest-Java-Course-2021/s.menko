@@ -1,0 +1,4 @@
+com/epam/brest/dao/OrderDAO.class
+com/epam/brest/dao/ProductDAO.class
+com/epam/brest/dao/CategoryDAO.class
+com/epam/brest/dao/UserDAO.class

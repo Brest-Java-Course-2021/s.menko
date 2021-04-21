@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.epam.brest.service.rest_app.UserControllerIT
+-------------------------------------------------------------------------------
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.213 s - in com.epam.brest.service.rest_app.UserControllerIT
