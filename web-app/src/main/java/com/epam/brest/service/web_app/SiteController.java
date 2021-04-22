@@ -21,7 +21,7 @@ public class SiteController {
 	private ProductService productService;
 	
 	@GetMapping("/")
-	public String listCustomers(Model theModel) {
+	public String mainPage(Model theModel) {
 		
 		List<Category> theCategories = categoryService.getCategories();
 		List<Product> theProducts = productService.getLatestProducts();	
