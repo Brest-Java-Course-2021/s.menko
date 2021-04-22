@@ -25,7 +25,7 @@ public class ProductController {
 	private ProductService productService;
 	
 	@GetMapping("/{id}")
-	public String listCustomers(@PathVariable("id") int id,Model theModel) {
+	public String productDetails(@PathVariable("id") int id,Model theModel) {
 		
 		List<Category> theCategories = categoryService.getCategories();
 		
