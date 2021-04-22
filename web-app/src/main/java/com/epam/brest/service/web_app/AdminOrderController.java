@@ -114,7 +114,7 @@ public class AdminOrderController extends AdminBase{
 	}
 	
 	@PostMapping("/save")
-	public String saveProduct(Model theModel, @Valid @ModelAttribute("order") Order theOrder, 
+	public String saveOrder(Model theModel, @Valid @ModelAttribute("order") Order theOrder, 
 			BindingResult theBindingResult) {
 		
 		if(!checkLoggedByAdmin()) {
