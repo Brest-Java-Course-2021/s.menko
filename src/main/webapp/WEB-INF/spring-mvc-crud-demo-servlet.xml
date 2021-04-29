@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/tx 
+		http://www.springframework.org/schema/tx/spring-tx.xsd 
+		http://www.springframework.org/schema/jdbc 
+		http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+	<!-- Add support for component scanning -->
+	<context:component-scan base-package="com.luv2code.springdemo" />
+
+	<!-- Add support for conversion, formatting and validation support -->
+	<mvc:annotation-driven conversion-service="conversionService"/>
+
+	<!-- Define Spring MVC view resolver -->
+	<bean
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="prefix" value="/WEB-INF/view/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+    <!-- Step 1: Define Database DataSource / connection pool -->
+	<bean id="myDataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource"
+          destroy-method="close">
+        <property name="driverClass" value="org.h2.Driver" />
+        <property name="jdbcUrl" value="jdbc:h2:mem:testdb;MODE=MySQL;DB_CLOSE_DELAY=-1" />
+        <property name="user" value="sa" />
+        
+ 		
+        <!-- these are connection pool properties for C3P0 -->
+        <property name="minPoolSize" value="5" />
+        <property name="maxPoolSize" value="20" />
+        <property name="maxIdleTime" value="30000" />
+	</bean>  
+	
+	
+	
+    <!-- Step 2: Setup Hibernate session factory -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+		<property name="dataSource" ref="myDataSource" />
+		<property name="packagesToScan" value="com.luv2code.springdemo.entity" />
+		<property name="hibernateProperties">
+		   <props>
+		      <prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+		      <prop key="hibernate.show_sql">true</prop>
+		   </props>
+		</property>
+   </bean>	  
+
+	<bean id="bCryptPasswordEncoder"
+    class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+
+    <!-- Step 3: Setup Hibernate transaction manager -->
+	<bean id="myTransactionManager"
+            class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory"/>
+    </bean>
+    
+    <!-- Step 4: Enable configuration of transactional behavior based on annotations -->
+	<tx:annotation-driven transaction-manager="myTransactionManager" />
+	
+	<bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+		<property name="maxUploadSize" value="600000" />
+	</bean>
+	
+	<mvc:resources location="/resources/" mapping="/resources/**"/>
+	
+	<jdbc:initialize-database data-source="myDataSource" enabled="true">
+			<jdbc:script location="resources/SqlScripts/create-test-db.sql"/>
+			<jdbc:script location="resources/SqlScripts/init-test-db.sql"/>
+	</jdbc:initialize-database>
+</beans>
+
+
+
+
+
