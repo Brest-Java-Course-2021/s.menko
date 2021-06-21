@@ -20,7 +20,7 @@ import javax.sql.DataSource;
 @Configuration
 public class SpringJdbcConfig {
 
-    @Bean
+     @Bean
     public DataSource h2DataSource() {
         return new EmbeddedDatabaseBuilder()
                 .setType(EmbeddedDatabaseType.H2)

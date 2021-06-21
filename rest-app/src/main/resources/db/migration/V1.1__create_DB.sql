@@ -4,6 +4,7 @@ DROP TABLE IF EXISTS category;
 DROP TABLE IF EXISTS productOrder;
 DROP TABLE IF EXISTS user;
 
+
 CREATE TABLE category 
 (
 id int NOT NULL AUTO_INCREMENT,
@@ -39,10 +40,6 @@ CREATE TABLE user (
   role varchar(45) DEFAULT NULL,
   PRIMARY KEY (id)
 ) ENGINE=InnoDB AUTO_INCREMENT=1;
-
-
-
-
 
 CREATE TABLE productOrder (
   id INT(11) NOT NULL AUTO_INCREMENT,
