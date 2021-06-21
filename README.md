@@ -1,5 +1,5 @@
 # Stanislav Menko - Online store
-Main course project.
+Main course project with FlyWay.
 
 ## Requirements
 
